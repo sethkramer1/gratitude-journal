@@ -19,7 +19,9 @@ end
   # GET /posts/1
   # GET /posts/1.json
   def show
-@random= Post.offset(rand(Post.count)).where.not(user_id: current_user).first
+
+
+  @random = Post.where.not(user_id: current_user).last
 
   end
 
