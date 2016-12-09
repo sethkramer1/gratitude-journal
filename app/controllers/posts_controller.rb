@@ -19,8 +19,7 @@ end
   # GET /posts/1
   # GET /posts/1.json
   def show
-
-    @random= Post.offset(rand(Post.count)).first
+@random= Post.offset(rand(Post.count)).where.not(user_id: current_user).first
 
   end
 
@@ -37,6 +36,8 @@ end
   # POST /posts.json
   def create
     @post = current_user.posts.build(post_params)
+
+
 
     respond_to do |format|
       if @post.save
