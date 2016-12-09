@@ -1,0 +1,182 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ #logo {
+ 	font-size: 26px;
+ 	font-weight: 700;
+ 	text-transform: uppercase;
+ 	letter-spacing: -1px;
+ 	padding: 15px 0;
+ 	a {
+ 		color: #0378c2;
+    text-decoration: none;
+    &:hover,  &:focus {
+      color: #0378c2; }
+ 	}
+ }
+
+ .navbar {
+     position: relative;
+ }
+ .brand {
+     position: absolute;
+     left: 50%;
+     margin-left: -50px !important;  /* 50% of your logo width */
+     display: block;
+ }
+
+  .navbar-default {
+   background-color: #fff !important;
+   border-bottom: solid;
+
+   .navbar-text {
+     color: #0378c2; }
+   .navbar-nav {
+     > li {
+       > a {
+         color: #0378c2;
+         &:hover,  &:focus {
+           color: #0378c2; }}}
+     > .active {
+       > a, > a:hover, > a:focus {
+         color: #0378c2;
+         background-color: #0378c2; }}
+     > .open {
+       > a, > a:hover, > a:focus {
+         color: #0378c2;
+         background-color: #0378c2; }}}
+       }
+
+
+ #main_content {
+ 	#content {
+    font-family: 'Open Sans', sans-serif;
+    text-align:center;
+ 		float: none;
+    background-color: #fff;
+ 	}
+ 	.link {
+ 		padding: .5em 1em;
+ 		border-bottom: 1px solid #e9e9e9;
+ 		.title {
+
+ 			a {
+ 				color: #FF4500;
+ 			}
+ 		}
+ 	}
+ 	.comments_title {
+ 		margin-top: 2em;
+ 	}
+ 	#comments {
+ 		.comment {
+ 			padding: 1em 0;
+ 			border-top: 1px solid #E9E9E9;
+ 			.lead {
+ 				margin-bottom: 0;
+ 			}
+ 		}
+ 	}
+ }
+
+ .emoji_drop{
+   font-size:50px;
+ }
+
+
+
+#label{
+  word-spacing:30px;
+}
+
+#radio1 {
+  font-size:50px;
+
+
+    cursor: pointer;
+}
+
+.heading{
+  font-family: 'Bungee', cursive;
+  font-size:40px;
+}
+
+
+.top-bar{
+  padding:20px;
+}
+
+.btn-lg {
+
+	background-color:#0378c2;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #0378c2;
+	display:inline-block;
+	color:#ffffff;
+	font-size:14px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+
+.btn-sm{
+	font-size:10px;
+  background-color:#f0f0f0;
+  margin-top:10px;
+
+
+}
+
+.btn:active {
+	position:relative;
+	top:1px;
+
+
+}
+
+.mybutton {
+
+	background-color:#0378c2;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #0378c2;
+	display:inline-block;
+	color:#ffffff;
+	font-size:12px;
+	padding:12px 30px;
+	text-decoration:none;
+}
+
+.mybutton:active {
+	position:relative;
+	top:1px;
+
+
+}
+
+.heading2{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Bungee', cursive;
+
+}

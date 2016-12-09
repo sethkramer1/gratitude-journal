@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :posts do
 
+
     def today
       where(:created_at => (Time.zone.now.beginning_of_day..Time.zone.now))
     end
@@ -12,7 +13,7 @@ class User < ActiveRecord::Base
     def this_week
       where(:created_at => (Time.zone.now.beginning_of_week..Time.zone.now))
     end
-  end   
+  end
 
 
 end
