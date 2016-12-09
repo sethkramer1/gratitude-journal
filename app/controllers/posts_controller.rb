@@ -1,20 +1,32 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_filter :require_permission, only: :edit
+
+def require_permission
+  if current_user != Post.find(params[:id]).user
+    redirect_to root_path
+    #Or do something else here
+  end
+end
+
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.where(user_id: current_user)
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
+
+    @random= Post.offset(rand(Post.count)).first
+
   end
 
   # GET /posts/new
   def new
-    @post = Post.new
+    @post = current_user.posts.build
   end
 
   # GET /posts/1/edit
@@ -24,7 +36,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.build(post_params)
 
     respond_to do |format|
       if @post.save

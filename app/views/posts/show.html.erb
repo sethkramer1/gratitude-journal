@@ -1,5 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+
+<%= @random %>
+<%= @random.try(:section1) %>
+<%= @random.try(:section2) %>
+<%= @random.try(:section3) %>
+
+
+
+
+
 <p>
   <strong>Section1:</strong>
   <%= @post.section1 %>
