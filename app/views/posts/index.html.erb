@@ -1,17 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Posts</h1>
+<h1>All My Entries</h1>
+<br>
 
 
 
     <% @posts.each do |post| %>
       <tr>
-        <%= time_ago_in_words(post.created_at) %> ago
+        <strong><%= time_ago_in_words(post.created_at) %> ago </strong>
 <br>
+        <strong>1.</strong>
         <%= post.section1 %> <br>
+        <strong>2.</strong>
         <%= post.section2 %><br>
+        <strong>3.</strong>
         <%= post.section3 %><br>
-        <%= link_to 'Edit', edit_post_path(post) %>
+        <%= link_to 'Edit', edit_post_path(post) %><br>
         <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
          <br>
          <br>

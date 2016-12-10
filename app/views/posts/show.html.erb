@@ -1,29 +1,35 @@
 <p id="notice"><%= notice %></p>
 
 
-<%= @random %>
-<%= @random.try(:section1) %>
-<%= @random.try(:section2) %>
-<%= @random.try(:section3) %>
-
-
-
-
 
 <p>
-  <strong>Section1:</strong>
+  <strong>1.</strong>
   <%= @post.section1 %>
 </p>
 
 <p>
-  <strong>Section2:</strong>
+  <strong>2.</strong>
   <%= @post.section2 %>
 </p>
 
 <p>
-  <strong>Section3:</strong>
+  <strong>3.</strong>
   <%= @post.section3 %>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<br>
+<br>
+<h5>Someone else's gratitude</h5><br>
+
+<strong>1.</strong>
+<%= @random.try(:section1) %>
+<br>
+<strong>2.</strong>
+<%= @random.try(:section2) %>
+<br>
+<strong>3.</strong>
+<%= @random.try(:section3) %>
+<br>
+
+<br>
+<%= link_to 'All my posts', posts_path %>

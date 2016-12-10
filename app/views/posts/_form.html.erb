@@ -14,15 +14,26 @@
 
 <br>
   <div class="field">
-    <%= f.text_area(:section1, :value => "1)", :class => "textareastyle", size: "50x3") %>
+    <span class = "number">
+      1.
+    </span>
+    <%= f.text_area(:section1, value: "I'm grateful for...", :class => "textboxline") %>
   </div>
+
   <div class="field">
-    <%= f.text_area(:section2, :value => "2)", :class => "textareastyle",size: "50x3") %>
+    <span class = "number">
+      2.
+    </span>
+    <%= f.text_area(:section2, value: "I'm grateful for...",:class => "textboxline") %>
   </div>
+
   <div class="field">
-    <%= f.text_area(:section3, :value => "3)", :class => "textareastyle",size: "50x3") %>
+    <span class = "number">
+      3.
+    </span>
+    <%= f.text_area(:section3, value: "I'm grateful for...",:class => "textboxline") %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Submit', class: "btn btn-lg btn-primary" %>
   </div>
 <% end %>
