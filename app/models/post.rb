@@ -7,7 +7,7 @@ class Post < ActiveRecord::Base
     def user_quota
      if user.posts.today.count >= 133
        errors.add(:base, "Exceeds daily limit baws")
-     elsif user.posts.this_week.count >= 7
+     elsif user.posts.this_week.count >= 100
        errors.add(:base, "Exceeds weekly limit")
      end
     end

@@ -11,17 +11,16 @@
     </div>
   <% end %>
 
+
+<br>
   <div class="field">
-    <%= f.label :section1 %><br>
-    <%= f.text_area :section1 %>
+    <%= f.text_area(:section1, :value => "1)", :class => "textareastyle", size: "50x3") %>
   </div>
   <div class="field">
-    <%= f.label :section2 %><br>
-    <%= f.text_area :section2 %>
+    <%= f.text_area(:section2, :value => "2)", :class => "textareastyle",size: "50x3") %>
   </div>
   <div class="field">
-    <%= f.label :section3 %><br>
-    <%= f.text_area :section3 %>
+    <%= f.text_area(:section3, :value => "3)", :class => "textareastyle",size: "50x3") %>
   </div>
   <div class="actions">
     <%= f.submit %>
