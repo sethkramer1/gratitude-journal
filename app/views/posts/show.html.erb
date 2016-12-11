@@ -1,35 +1,45 @@
 <p id="notice"><%= notice %></p>
 
+<h3> Today, I am grateful for...   </h3>
+<br>
 
 
+<div class = "box">
 <p>
-  <strong>1.</strong>
+<span class = "number2">1 </span>
   <%= @post.section1 %>
 </p>
 
 <p>
-  <strong>2.</strong>
+  <span class = "number2">2 </span>
   <%= @post.section2 %>
 </p>
 
 <p>
-  <strong>3.</strong>
+  <span class = "number2">3 </span>
   <%= @post.section3 %>
 </p>
 
+</div>
 <br>
 <br>
-<h5>Someone else's gratitude</h5><br>
+<br>
+<br>
+<h3>Someone else's gratitude</h3><br>
 
-<strong>1.</strong>
+<div class ="box">
+  <span class = "number2">1 </span>
 <%= @random.try(:section1) %>
 <br>
-<strong>2.</strong>
+<span class = "number2">2 </span>
 <%= @random.try(:section2) %>
 <br>
-<strong>3.</strong>
+<span class = "number2">3 </span>
 <%= @random.try(:section3) %>
-<br>
+</div>
 
 <br>
-<%= link_to 'All my posts', posts_path %>
+<br>
+<br>
+<br>
+<br>

@@ -18,6 +18,12 @@
  // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "font-awesome";
+
+body{
+
+}
+
 
  #logo {
  	font-size: 26px;
@@ -26,10 +32,9 @@
  	letter-spacing: -1px;
  	padding: 15px 0;
  	a {
- 		color: #0378c2;
+ 		color: #fff;
     text-decoration: none;
-    &:hover,  &:focus {
-      color: #0378c2; }
+
  	}
  }
 
@@ -44,15 +49,15 @@
  }
 
   .navbar-default {
-   background-color: #fff !important;
-   border-bottom: solid;
+   background-color: #295aaa !important;
+   border-bottom:solid black 1px;
 
    .navbar-text {
-     color: #0378c2; }
+     color: #fff; }
    .navbar-nav {
      > li {
        > a {
-         color: #0378c2;
+         color: #fff;
          &:hover,  &:focus {
            color: #0378c2; }}}
      > .active {
@@ -67,11 +72,15 @@
 
 
  #main_content {
+
  	#content {
     font-family: 'Open Sans', sans-serif;
-    text-align:center;
+    text-align:left;
  		float: none;
-    background-color: #fff;
+    padding-top: 10px;
+    border-radius:5px;
+
+
  	}
  	.link {
  		padding: .5em 1em;
@@ -127,9 +136,9 @@
 .btn-lg {
 
 	background-color:#0378c2;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
 	border:1px solid #0378c2;
 	display:inline-block;
 	color:#ffffff;
@@ -153,26 +162,6 @@
 
 }
 
-.mybutton {
-
-	background-color:#0378c2;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #0378c2;
-	display:inline-block;
-	color:#ffffff;
-	font-size:12px;
-	padding:12px 30px;
-	text-decoration:none;
-}
-
-.mybutton:active {
-	position:relative;
-	top:1px;
-
-
-}
 
 .heading2{
   font-size: 25px;
@@ -185,10 +174,27 @@
   border-left:solid white 3px;
    border-right:solid white 4px;
    border-top:solid white 4px;
-   border-bottom:solid black 2px;
-   width:500px; height:30px
+   border-bottom:solid black 1px;
+   width:50%;
+  height:28px;
 }
 
 .number {
-  font-size: 25px;
+  font-size: 28px;
+  color: #0378c2;
+  margin-top:30px;
+}
+
+.number2 {
+  font-size: 28px;
+  color: #0378c2;
+}
+
+.box {
+
+ height:28px;
+ margin: auto;
+}
+.time_heading {
+  font-size: 18px;
 }
