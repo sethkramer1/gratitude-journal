@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :users
-  resources :posts
-  root to:"posts#new"
+
+devise_for :users
+get 'welcome/index'
+resources :posts
+
+authenticated :user do
+  root "posts#index", as: "authenticated_root"
+end
+
+root "welcome#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
