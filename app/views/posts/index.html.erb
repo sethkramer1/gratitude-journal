@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
 
+
+<div class="center">
+
 <h1>All My Entries</h1>
 
 <br>
+</div>
 
+<div class="center1">
 
     <% @posts.each do |post| %>
   <span class = "time_heading" >Submitted <%= time_ago_in_words(post.created_at) %> ago</span>
@@ -27,3 +32,5 @@
 <br>
 
 <%= link_to 'New Post', new_post_path %>
+
+</div>
