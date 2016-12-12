@@ -33,7 +33,7 @@ body{
 }
  color:#000;
 
-  background:#fff url('/assets/white-shape.png');
+  background:#fff url('/assets/large-white-shape.png');
   background-attachment: fixed;
   background-size:cover
 }
@@ -53,6 +53,14 @@ body{
 
 }
 
+
+.purple{
+  margin: auto;
+  text-align: center;
+
+  max-width:750px;
+  padding:15px;
+}
 
  #logo {
  	font-size: 26px;
@@ -114,15 +122,14 @@ body{
   padding:10px;
 
 }
-.purple{
-  max-width:600px;
-  margin:auto;
-}
+
 
 .center1 {
 text-align:center;
 padding-left:20px;
 padding-right:20px;
+max-width: 750px;
+margin:auto;
 }
 
  #main_content {
