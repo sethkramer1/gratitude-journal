@@ -5,19 +5,17 @@
       <div class="container-sml">
         <div class="col-12 text-center">
           <h1>
-            Become a better you with gratitude.
+            The simplest way to keep a gratitude journal.
           </h1>
           <h2 class="paragraph">
-            We're creating the best place to go when starting a new business or company. With Launchaco you can instantly search domain names, social media handles, and see your logo in beautiful logotypes.
-          </h2>
-          <button class="ctas">
-            <div class="ctas-button">
-            <%= link_to 'Sign up', new_user_registration_path %>
-          </button>
-            <button class="ctas-button-2">
-              <%= link_to 'Sign in', new_user_session_path %>
-            </button>
-          </div>
+People who regularly practice gratitude experience more positive emotions,
+feel more alive, sleep better, express more compassion and kindness,
+and even have stronger immune systems.
+
+<div class="ctas">
+  <%= link_to 'Sign up', new_user_registration_path, :class => "ctas-button"%>
+  <%= link_to 'Sign in', new_user_session_path,:class => "ctas-button-2" %>
+</div>
         </div>
       </div>
       <div class="container-lrg">
@@ -116,16 +114,12 @@
     <div class="footer">
       <div class="container-sml text-center">
         <div class="col-12">
-          <h5>
+          <h2>
             Instantly search domains, handles and logotypes.
-          </h5>
-          <button class="ctas">
-            <div class="ctas-button">
-            <%= link_to 'Sign up', new_user_registration_path %>
-          </button>
-            <button class="ctas-button-2">
-              <%= link_to 'Sign in', new_user_session_path %>
-            </button>
+          </h2>
+          <div class="ctas">
+            <%= link_to 'Sign up', new_user_registration_path, :class => "ctas-button"%>
+            <%= link_to 'Sign in', new_user_session_path,:class => "ctas-button-2" %>
           </div>
         </div>
       </div>

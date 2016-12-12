@@ -13,7 +13,7 @@ end
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.where(user_id: current_user)
+    @posts = Post.where(user_id: current_user).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
   end
 
   # GET /posts/1
@@ -22,6 +22,9 @@ end
 
 
   @random = Post.where.not(user_id: current_user).last
+
+
+  Post.offset(rand(Post.count)).first
 
   end
 

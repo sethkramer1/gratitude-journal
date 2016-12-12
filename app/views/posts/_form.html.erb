@@ -1,3 +1,6 @@
+
+
+
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -12,28 +15,13 @@
   <% end %>
 
 
-<br>
-  <div  class="field">
-    <span class = "number">
-      1 
-    </span>
-    <%= f.text_area(:section1, value: "I'm grateful for...", :class => "textboxline") %>
-  </div>
+  <%= simple_form_for @post do |f| %>
+    <%= f.input :section1, :label => "1", input_html: {:class => "textboxline", value: "I'm grateful for..."} %>
+    <%= f.input :section2, :label => "2",input_html: {:class => "textboxline",value: "Something else I'm grateful for..."} %>
+    <%= f.input :section3,:label => "3",  input_html: {:class => "textboxline",value: "A third thing I'm grateful for..."} %>
+    <%= f.submit 'Submit', class: "ctas-button" %>
 
-  <div class="field">
-    <span class = "number">
-      2
-    </span>
-    <%= f.text_area(:section2, value: "I'm grateful for...",:class => "textboxline") %>
-  </div>
+  <% end %>
 
-  <div class="field">
-    <span class = "number">
-      3
-    </span>
-    <%= f.text_area(:section3, value: "I'm grateful for...",:class => "textboxline") %>
-  </div>
-  <div class="actions">
-    <%= f.submit 'Submit', class: "btn btn-lg btn-primary" %>
-  </div>
+
 <% end %>

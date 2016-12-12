@@ -22,6 +22,34 @@
 
 body{
 
+   a:hover { background-color: transparent; text-decoration: none; }
+   background-color: #fff;
+   font-size:15px;
+   color:#ABA0CB;
+
+ h1{
+   font-weight:bolder;
+ text-align:center; }
+ color:#fff;
+
+  background:#ABA0CB url('/assets/dark-purple.png');
+  background-attachment: fixed;
+  background-size:cover
+}
+
+
+
+.card {
+
+  margin: auto;
+  text-align: center;
+  background:#fff;
+
+  max-width:600px;
+  color:black;
+  border-radius: .35rem;
+      box-shadow: 0 0 20px 7px rgba(0,0,0,0.075);
+
 }
 
 
@@ -61,7 +89,7 @@ body{
  }
 
   .navbar-default {
-   background-color: #ABA0CB !important;
+   background-color: transparent !important;
 
    .navbar-text {
      color: #fff; }
@@ -88,6 +116,8 @@ body{
 
 .center1 {
 text-align:center;
+padding-left:20px;
+padding-right:20px;
 }
 
  #main_content {
@@ -184,23 +214,25 @@ text-align:center;
 }
 
 .textboxline{
-  border-left:solid white 3px;
-   border-right:solid white 4px;
-   border-top:solid white 4px;
-   border-bottom:solid black 1px;
+
+
+   background-color: #fff;
    width:50%;
-  height:28px;
+   margin:auto;
 }
 
 .number {
   font-size: 28px;
-  color: #0378c2;
+  color: #ABA0CB;
   margin-top:30px;
+  font-weight: bolder;
+
 }
 
 .number2 {
   font-size: 28px;
-  color: #0378c2;
+  color: #ABA0CB;
+  font-weight: bolder;
 }
 
 .box {
@@ -209,7 +241,12 @@ text-align:center;
  margin: auto;
 }
 .time_heading {
-  font-size: 18px;
+  color:#6c4e8c;
+}
+
+.time_heading1 {
+  font-size: 22px;
+  color:#6c4e8c;
 }
 
 .centerdevices .computeriphone .mask {
@@ -674,6 +711,7 @@ p.paragraph {
 	}
 }.socialproof {
 	padding: 90px 0;
+  background-color: #efefef;
 }
 @media (max-width: 680px) {
 	.socialproof .flex {
@@ -737,6 +775,10 @@ p.paragraph {
 	background: transparent;
 	color: white;
 	margin: 0 0 0 10px;
+}
+
+.feature3 {
+  background-color: white;
 }
 @media (max-width: 440px) {
 	.ctas-button,

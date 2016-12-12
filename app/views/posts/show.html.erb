@@ -1,33 +1,14 @@
-<p id="notice"><%= notice %></p>
 
-<h3> Today, I am grateful for...   </h3>
-<br>
+<div class="center">
 
-
-<div class = "box">
-<p>
-<span class = "number2">1 </span>
-  <%= @post.section1 %>
-</p>
-
-<p>
-  <span class = "number2">2 </span>
-  <%= @post.section2 %>
-</p>
-
-<p>
-  <span class = "number2">3 </span>
-  <%= @post.section3 %>
-</p>
+<h1>Great job! As a reward, enjoy a stranger's entry.</h1>
 
 </div>
-<br>
-<br>
-<br>
-<br>
-<h3>Someone else's gratitude</h3><br>
+<div class="center1">
+<div class ="card">
+  <br>
+  <span class = "time_heading1" >Written <%= time_ago_in_words(@random.created_at) %> ago by a stranger</span><br>
 
-<div class ="box">
   <span class = "number2">1 </span>
 <%= @random.try(:section1) %>
 <br>
@@ -36,10 +17,12 @@
 <br>
 <span class = "number2">3 </span>
 <%= @random.try(:section3) %>
+<br>
+<br>
 </div>
+<br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
+
+<%= link_to 'Back to My Entries', posts_path,:class => "ctas-button" %>
+
+</div>

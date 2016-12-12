@@ -1,36 +1,47 @@
-<p id="notice"><%= notice %></p>
-
 
 <div class="center">
 
-<h1>All My Entries</h1>
+<h1>My Entries</h1>
 
 <br>
 </div>
 
+
 <div class="center1">
 
+  <div class="card">
+
     <% @posts.each do |post| %>
-  <span class = "time_heading" >Submitted <%= time_ago_in_words(post.created_at) %> ago</span>
-      <br>
+
+  <br>
+
+
 <span class = "number2">1 </span>
         <%= post.section1 %> <br>
         <span class = "number2">2 </span>
         <%= post.section2 %><br>
         <span class = "number2">3 </span>
         <%= post.section3 %><br>
-
           <small>
+            <span class = "time_heading" >Written <%= time_ago_in_words(post.created_at) %> ago</span><br>
+
         <%= link_to 'Edit', edit_post_path(post) %>
         <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
       </small>
-         <br>
-         <br>
+
+      <br>
+
     <% end %>
 
 
+</div>
+
+
+<%= will_paginate @posts %>
+</div>
+
 <br>
 
-<%= link_to 'New Post', new_post_path %>
 
-</div>
+<br>
+<br>
