@@ -23,16 +23,17 @@
 body{
 
    a:hover { background-color: transparent; text-decoration: none; }
-   background-color: #fff;
-   font-size:15px;
-   color:#ABA0CB;
+   font-size:18px;
 
  h1{
-   font-weight:bolder;
- text-align:center; }
- color:#fff;
+ text-align:center;
+ font-family: 'Bungee', cursive;
 
-  background:#ABA0CB url('/assets/dark-purple.png');
+
+}
+ color:#000;
+
+  background:#fff url('/assets/white-shape.png');
   background-attachment: fixed;
   background-size:cover
 }
@@ -72,7 +73,7 @@ body{
  }
 
  .navbar {
-     position: relative;
+     position: relative;;
      border-radius: 0px;
      margin-bottom: 0;
      border: 0 !important;
@@ -89,7 +90,7 @@ body{
  }
 
   .navbar-default {
-   background-color: transparent !important;
+   background-color: #ABA0CB !important;
 
    .navbar-text {
      color: #fff; }
@@ -112,6 +113,10 @@ body{
 .center{
   padding:10px;
 
+}
+.purple{
+  max-width:600px;
+  margin:auto;
 }
 
 .center1 {
@@ -217,13 +222,13 @@ padding-right:20px;
 
 
    background-color: #fff;
-   width:50%;
+   width:80%;
    margin:auto;
 }
 
 .number {
   font-size: 28px;
-  color: #ABA0CB;
+  color: #000;
   margin-top:30px;
   font-weight: bolder;
 
@@ -231,7 +236,7 @@ padding-right:20px;
 
 .number2 {
   font-size: 28px;
-  color: #ABA0CB;
+  color: #000;
   font-weight: bolder;
 }
 
@@ -241,12 +246,15 @@ padding-right:20px;
  margin: auto;
 }
 .time_heading {
-  color:#6c4e8c;
+  color:#000;
+  font-weight: bold;
 }
 
 .time_heading1 {
   font-size: 22px;
-  color:#6c4e8c;
+  color:#000;
+  font-weight: bold;
+
 }
 
 .centerdevices .computeriphone .mask {
@@ -680,7 +688,7 @@ p.paragraph {
 		margin-top: 60px;
 	}
 }.ctas-button,
-.ctas-button-2 {
+.ctas-button-2,.ctas-button-3 {
 	display: inline-block;
 	height: 40px;
 	line-height: 38px;
@@ -699,6 +707,13 @@ p.paragraph {
 	color: white;
 	margin: 0 0 0 10px;
 }
+.ctas-button-3 {
+	background: #ABA0CB;
+	color: white;
+	margin: 0 0 0 10px;
+
+}
+
 @media (max-width: 440px) {
 	.ctas-button,
 	.ctas-button-2 {

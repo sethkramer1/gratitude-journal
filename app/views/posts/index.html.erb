@@ -1,4 +1,7 @@
 
+
+<div class="purple">
+
 <div class="center">
 
 <h1>My Entries</h1>
@@ -25,7 +28,6 @@
           <small>
             <span class = "time_heading" >Written <%= time_ago_in_words(post.created_at) %> ago</span><br>
 
-        <%= link_to 'Edit', edit_post_path(post) %>
         <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
       </small>
 
@@ -34,10 +36,12 @@
     <% end %>
 
 
-</div>
 
 
 <%= will_paginate @posts %>
+</div>
+
+</div>
 </div>
 
 <br>

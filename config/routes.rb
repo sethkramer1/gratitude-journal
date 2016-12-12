@@ -5,7 +5,7 @@ get 'welcome/index'
 resources :posts
 
 authenticated :user do
-  root "posts#index", as: "authenticated_root"
+  root "posts#new", as: "authenticated_root"
 end
 
 root "welcome#index"
