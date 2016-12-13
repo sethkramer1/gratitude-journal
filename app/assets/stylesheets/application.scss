@@ -31,7 +31,10 @@ body{
  text-align:center;
  font-family: 'Bungee', cursive;
 
+}
 
+h2{
+  font-size:32px;
 }
 
   background:#fff url('/assets/large-white-shape.png');
@@ -50,9 +53,17 @@ body{
   max-width:600px;
   border-radius: .35rem;
   border: #00173d solid 1px
+}
 
+.card-center {
+  padding:40px;
+  margin: auto;
+  text-align: center;
+  background:#fff;
 
-
+  max-width:600px;
+  border-radius: .35rem;
+  border: #00173d solid 1px
 }
 
 
@@ -717,10 +728,16 @@ p.paragraph {
 	letter-spacing: .3px;
 	border: 1px solid white;
 	text-decoration: none;
+
 }
+
+.ctas-button:hover  { background-color: #fff;}
+
+
+
 .ctas-button-2 {
 	background: transparent;
-	color: white;
+	color: white !important;
 	margin: 0 0 0 10px;
 }
 .ctas-button-3 {
