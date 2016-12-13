@@ -42,9 +42,9 @@ body{
 
 
 .card {
-
+  padding:40px;
   margin: auto;
-  text-align: center;
+  text-align: left;
   background:#fff;
 
   max-width:600px;
@@ -244,8 +244,7 @@ margin:auto;
 }
 
 .number2 {
-  font-size: 20px;
-  font-weight: bolder;
+  font-size: 20px !important;
 }
 
 .box {
@@ -255,14 +254,23 @@ margin:auto;
 }
 .time_heading {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 28px;
 
 }
 
 .time_heading1 {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: bold;
 
+}
+
+ol {
+    margin: 0;
+    padding: 12px;
+}
+li {
+    text-align: left;
+    font-size:17px;
 }
 
 .centerdevices .computeriphone .mask {

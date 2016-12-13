@@ -6,19 +6,15 @@
 </div>
 <div class="center1">
 <div class ="card">
-  <br>
   <span class = "time_heading1" >Written <%= time_ago_in_words(@random.created_at) %> ago by a stranger</span><br>
 
-  <span class = "number2">1 </span>
-<%= @random.try(:section1) %>
+<ol>
+<li><%= @random.try(:section1) %></li>
 <br>
-<span class = "number2">2 </span>
-<%= @random.try(:section2) %>
+<li><%= @random.try(:section2) %></li>
 <br>
-<span class = "number2">3 </span>
-<%= @random.try(:section3) %>
-<br>
-<br>
+<li><%= @random.try(:section3) %></li>
+</ol>
 </div>
 <br>
 

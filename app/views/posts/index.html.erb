@@ -15,24 +15,27 @@
 
     <% @posts.each do |post| %>
 
-  <br>
 
 <span class = "time_heading">
 <%=post.created_at.strftime("%m/%d/%Y")%>
 </span><br>
-<span class = "number2">1 </span>
-        <%= post.section1 %> <br>
-        <span class = "number2">2 </span>
-        <%= post.section2 %><br>
-        <span class = "number2">3 </span>
-        <%= post.section3 %><br>
+<span class = "number2">
+<ol>
+  <li>
+   <%= post.section1 %> </li><br>
+    <li>
+        <%= post.section2 %> </li>   <br>
+  <li>
+        <%= post.section3 %>  </li>
 
+</ol>
+</span>
         <!--
             <span class = "time_heading" >Written <%= time_ago_in_words(post.created_at) %> ago</span><br>
 --> <small>
         <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
       </small>
-
+      <br>
       <br>
 
     <% end %>
@@ -41,12 +44,11 @@
 
 
 <%= will_paginate @posts %>
+<br>
 </div>
 
 </div>
 
 <br>
-
-
 <br>
 <br>
