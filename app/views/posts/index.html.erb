@@ -17,16 +17,19 @@
 
   <br>
 
-
+<span class = "time_heading">
+<%=post.created_at.strftime("%m/%d/%Y")%>
+</span><br>
 <span class = "number2">1 </span>
         <%= post.section1 %> <br>
         <span class = "number2">2 </span>
         <%= post.section2 %><br>
         <span class = "number2">3 </span>
         <%= post.section3 %><br>
-          <small>
-            <span class = "time_heading" >Written <%= time_ago_in_words(post.created_at) %> ago</span><br>
 
+        <!--
+            <span class = "time_heading" >Written <%= time_ago_in_words(post.created_at) %> ago</span><br>
+--> <small>
         <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
       </small>
 
