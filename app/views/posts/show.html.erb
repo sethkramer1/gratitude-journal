@@ -1,24 +1,37 @@
 
-<div class="center">
+<div class="show-center">
 
-<h1>Great job! As a reward, enjoy a stranger's entry.</h1>
+<h1>Great job! As a reward, get inspired by stranger's entry.</h1>
 
 </div>
 <div class="center1">
 <div class ="card">
-  <span class = "time_heading1" >Written <%= time_ago_in_words(@random.created_at) %> ago by a stranger</span><br>
+  <span class = "time_heading2" >Written <%= time_ago_in_words(@random.created_at) %> ago by a stranger</span><br>
 
-<ol>
-<li><%= @random.try(:section1) %></li>
 <br>
-<li><%= @random.try(:section2) %></li>
-<br>
-<li><%= @random.try(:section3) %></li>
-</ol>
+
+  <span class ="heading3"> Today's Gratitude</span>
+  <span class = "text1"> <br>
+    <%= @random.try(:section1) %>
+    <br>
+
+  </span>
+  <br>
+  <span class ="heading3"> Today's Goal</span>
+  <br>
+   <%= @random.try(:goal) %>
+   <br>
+   <br>
+   <span class ="heading3"> Today's Learning</span>
+   <br>
+    <%= @random.try(:learning) %>
+   <br>
+
+  </span>
+
+
+
 </div>
 <br>
 
-
-<%= link_to 'Back to My Entries', posts_path,:class => "ctas-button-3" %>
-
-</div>
+<%= button_to 'Back to My Entries', posts_path,:class => "ctas-button-3" %>

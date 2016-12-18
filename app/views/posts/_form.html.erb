@@ -1,4 +1,13 @@
 
+<div class = "card-center">
+
+
+<div class ="time_heading2">  <%= Time.now.strftime("%m/%d/%Y") %>
+</div>
+<div class = "time_heading3">
+"Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning." -- Albert Einstein
+
+ </div>
 
 
 <%= form_for(@post) do |f| %>
@@ -16,12 +25,18 @@
 
 
   <%= simple_form_for @post do |f| %>
+  <h1> What are you grateful for today? </h1>
+
     <%= f.input :section1, label: false, input_html: {:class => "textboxline", value: "I'm grateful for..."} %>
-    <%= f.input :section2, label: false,input_html: {:class => "textboxline",value: "Something else I'm grateful for..."} %>
-    <%= f.input :section3,label: false,  input_html: {:class => "textboxline",value: "A third thing I'm grateful for..."} %>
+    <h1> What is one thing you want to accomplish today? </h1>
+    <%= f.input :goal,label: false,  input_html: {:class => "textboxline",value: "My biggest goal for today is..."} %>
+    <h1> What is one thing you learned recently? </h1>
+    <%= f.input :learning,label: false,  input_html: {:class => "textboxline",value: "I learned..."} %>
+
     <%= f.submit 'Submit', class: "ctas-button-3" %>
 
   <% end %>
 
 
 <% end %>
+</div>

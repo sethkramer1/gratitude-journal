@@ -4,39 +4,64 @@
 <div class="center">
 
 <h1>My Entries</h1>
-
-<br>
 </div>
+
+
+
+
+
+
+
+
 
 
 <div class="center1">
 
   <div class="card">
+    <div class="form-group">
+      Search Entries
+      <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+      <%= text_field_tag :search, params[:search] %>
+       <%= submit_tag "Go!", class: "ctas-button-3"%>
+
+      <% end %>
+
+    </div>
+    <br>
+
 
     <% @posts.each do |post| %>
 
 
-<span class = "time_heading">
+<span class = "time_heading2">
 <%=post.created_at.strftime("%m/%d/%Y")%>
 </span><br>
-<span class = "number2">
-<ol>
-  <li>
-   <%= post.section1 %> </li><br>
-    <li>
-        <%= post.section2 %> </li>   <br>
-  <li>
-        <%= post.section3 %>  </li>
 
-</ol>
+<span class ="heading3"> Today's Gratitude</span>
+<span class = "text1"> <br>
+   <%= post.section1 %>
+  <br>
+
+</span>
+<br>
+<span class ="heading3"> Today's Goal</span>
+<br>
+ <%= post.goal %>
+ <br>
+ <br>
+ <span class ="heading3"> Today's Learning</span>
+ <br>
+  <%= post.learning %>
+ <br>
+
 </span>
         <!--
             <span class = "time_heading" >Written <%= time_ago_in_words(post.created_at) %> ago</span><br>
 --> <small>
-        <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Delete Entry', post, method: :delete, data: { confirm: 'Are you sure?' } %>
       </small>
-      <br>
-      <br>
+
+      <hr>
 
     <% end %>
 

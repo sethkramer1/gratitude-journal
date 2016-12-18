@@ -14,6 +14,14 @@ end
   # GET /posts.json
   def index
     @posts = Post.where(user_id: current_user).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
+
+    if params[:search]
+    @posts = Post.where(user_id: current_user).search(params[:search]).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
+  else
+    @posts = Post.where(user_id: current_user).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
+  end
+  @counting = Post.where(user_id: current_user).all.count
+
   end
 
   # GET /posts/1
@@ -87,6 +95,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:section1, :section2, :section3)
+      params.require(:post).permit(:section1, :section2, :section3, :goal, :learning)
     end
 end
