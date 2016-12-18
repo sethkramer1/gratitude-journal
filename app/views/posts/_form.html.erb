@@ -5,8 +5,7 @@
 <div class ="time_heading2">  <%= Time.now.strftime("%m/%d/%Y") %>
 </div>
 <div class = "time_heading3">
-"Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning." -- Albert Einstein
-
+  "<%= @quote.try(:body) %>" -- <%= @quote.try(:author) %>
  </div>
 
 

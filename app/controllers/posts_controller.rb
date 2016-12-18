@@ -32,13 +32,15 @@ end
   @random = Post.where.not(user_id: current_user).last
 
 
-  Post.offset(rand(Post.count)).first
+
 
   end
 
   # GET /posts/new
   def new
     @post = current_user.posts.build
+    @quote =   Quote.offset(rand(Quote.count)).first
+
   end
 
   # GET /posts/1/edit
