@@ -83,6 +83,8 @@ h2{
  #logo {
 
    margin-top:5px;
+   margin-bottom:5px;
+
 
 
  	a {
@@ -107,6 +109,10 @@ font-family: 'Amatic SC', cursive;
   -webkit-box-shadow: none !important;
 
 
+ }
+
+ .text{
+   font-family: 'karla'
  }
  .brand {
      position: absolute;
@@ -665,6 +671,7 @@ p.paragraph {
   font-size: 30px;
   line-height: 30px;
   font-weight: 900;
+  padding-bottom:5px;
 }
 @media (max-width: 420px) {
   .logo {
