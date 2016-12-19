@@ -31,6 +31,7 @@ body{
  text-align:center;
  font-family: 'Amatic SC', cursive;
  font-weight:bold;
+ font-size:40px;
 
 }
 
@@ -43,28 +44,35 @@ h2{
   background-size:cover
 }
 
+h3{
+text-align:center;
+font-family: 'Amatic SC', cursive;
+font-weight:bold;
+font-size:31px;
 
+}
 
 .card {
-  padding:40px;
+  padding:60px;
   margin: auto;
   text-align: left;
   background:#fff;
 
   max-width:600px;
   border-radius: .35rem;
-  border: #D0D0D0 solid 1px
+  border: #D0D0D0 solid 1px;
+
 }
 
 .card-center {
-  padding:20px;
+  padding:30px;
   margin:auto;
   margin-top:25px;
   text-align: center;
   background:#fff;
   max-width:600px;
   border-radius: .35rem;
-  border: #D0D0D0 solid 1px
+  border: #D0D0D0 solid 1px;
 }
 
 .card-inside {
@@ -263,15 +271,16 @@ margin:auto;
 
 
 .heading2{
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
-  font-family: 'Bungee', cursive;
+  font-family: 'Amatic SC', cursive;
+  padding-bottom:7px;
 
 }
 
 .heading3{
-  font-weight: bold;
-  font-size:20px;
+  font-size:17px;
+  font-weight:bold;
 
 }
 
@@ -284,10 +293,16 @@ margin:auto;
 
 
    background-color: #fff;
-   width:80%;
+   width:90%;
    margin:auto;
-   border: #00173d solid 1px
+   border: #00173d solid 1px;
+   font-size: 15px;
 }
+
+.form-control {
+  height:65px !important;
+}
+
 
 .number {
   font-size: 20px;
@@ -318,9 +333,7 @@ margin:auto;
 }
 
 .time_heading2 {
-  font-size: 32px;
-  font-family: 'Amatic SC', cursive;
-  font-weight: bold;
+  font-size: 22px;
   text-align: center;
 
 }
@@ -330,16 +343,29 @@ margin:auto;
 
 }
 
+.quote {
+  font-size: 15px;
+  text-align: center;
+  width:90%;
+  margin:auto;
 
+}
+
+
+.delete {
+  font-size:10px;
+
+}
 
 ol {
     margin: 0;
-    padding: 12px;
-    list-style-type:none
+    padding: 15px;
+    margin-top:-15px;
 }
 li {
     text-align: left;
     font-size:17px;
+    padding:5px;
 }
 
 .centerdevices .computeriphone .mask {

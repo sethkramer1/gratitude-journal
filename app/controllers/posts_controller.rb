@@ -84,7 +84,7 @@ end
   def destroy
     @post.destroy
     respond_to do |format|
-      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+      format.html { redirect_to posts_url }
       format.json { head :no_content }
     end
   end
