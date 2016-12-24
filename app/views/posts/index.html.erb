@@ -12,49 +12,40 @@
 
 <div class="center1">
 
-  <div class="card">
 
-    <div class="form-group">
-
-
-
-      <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
-        <%= text_field_tag :search, params[:search] %>
-        <br>
-       <%= submit_tag "Search Entries", class: "ctas-button-4"%>
-
-      <% end %>
-
-    </div>
-  </div>
 
 
     <% @posts.each do |post| %>
 
   <div class="card">
 <div class = "heading2">
-<%= evil_icon 'ei-calendar',size: :s, class: "icons" %><%=post.created_at.strftime(" %m/%d/%Y")%>
+  <i class="fa fa-calendar" aria-hidden="true"></i>
+<%=post.created_at.strftime(" %m/%d/%Y")%>
 </div>
 
 
-<span class ="heading3"> Gratitude</span>
-<span class = "text1">
-<ol>
+<span class ="heading3">
+My Gratitude</span>
+<div class = "text1">
+
 <li><%= post.section1 %></li>
+</div>
+<div class = "text1">
 <li><%= post.section2 %></li>
+</div>
+<div class = "text1">
 <li><%= post.section3 %></li>
-</ol>
+</div>
 
-</span>
 
-<span class ="heading3"> Goal</span>
+<span class ="heading3"> My Goal</span>
 
- <span class = "text1">
-   <ol>
-  <li> <%= post.goal %></li>
-</ol>
+ <div class = "text2">
 
- </span>
+ <li><%= post.goal %></li>
+
+
+ </div>
 
 
 </span>
@@ -62,8 +53,9 @@
             <span class = "time_heading" >Written <%= time_ago_in_words(post.created_at) %> ago</span><br>
 -->
 <span class ="delete">
-        <%= link_to 'Delete Entry', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to '      <i class="fa fa-trash-o" aria-hidden="true"></i>Delete'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } %>
       </span>
+
 
 
   </div>
