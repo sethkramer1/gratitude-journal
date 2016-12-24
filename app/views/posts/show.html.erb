@@ -1,32 +1,43 @@
 
 <div class="show-center">
 
-<h1>Great job! As a reward, get inspired by a stranger's entry.</h1>
+<h4>Great job! As a reward, get inspired by a stranger's entry.</4>
 
 </div>
 <div class="center1">
 <div class ="card">
-  <span class = "heading2" >Written <%= time_ago_in_words(@random.created_at) %> ago by a stranger</span>
-
-<br>
-<br>
-<span class ="heading3"> Anonymous Gratitude</span>
-  <span class = "text1"> <br>
-    <span style="font-weight: bold;">1.</span> <%= @random.try(:section1) %><br>
-    <span style="font-weight: bold;">2.</span> <%= @random.try(:section2) %><br>
-    <span style="font-weight: bold;">3.</span> <%= @random.try(:section3) %>
-    <br>
-
-  </span>
-  <br>
-  <span class ="heading3"> Anonymous Goal</span>
-  <br>
-     <span class = "text1"> <%= @random.try(:goal) %></span>
-
-   <br>
+  <div class="heading2">
+<i class="fa fa-calendar" aria-hidden="true"></i> Written <%= time_ago_in_words(@random.created_at) %> ago by a stranger
+</div>
 
 
 
+
+   <span class ="heading3">
+   Anonymous Gratitude</span>
+   <div class = "text1">
+
+   <li><%= @random.try(:section1) %></li>
+   </div>
+   <div class = "text1">
+   <li><%= @random.try(:section2) %></li>
+   </div>
+   <div class = "text1">
+   <li><%= @random.try(:section3) %></li>
+   </div>
+
+
+   <span class ="heading3"> Anonymous Goal</span>
+
+    <div class = "text2">
+
+    <li><%= @random.try(:goal) %></li>
+
+
+    </div>
+
+
+   </span>
 
 </div>
 
