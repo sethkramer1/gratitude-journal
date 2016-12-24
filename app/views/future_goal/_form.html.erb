@@ -1,0 +1,32 @@
+
+<div class = "card-center">
+
+
+
+<%= form_for(@future_goal) do |f| %>
+  <% if @future_goal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@future_goal.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @future_goal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <%= simple_form_for @future_goal do |f| %>
+  <div class ="form-heading"> What is your long term goal? </div>
+
+    <%= f.input :LongTermGoal, label: false, input_html: {:class => "textboxline"} %>
+
+<div class = "spacing">
+    <%= f.submit 'Submit', class: "ctas-button-3" %>
+</div>
+  <% end %>
+
+
+<% end %>
+</div>

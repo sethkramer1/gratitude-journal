@@ -11,6 +11,7 @@ gem "font-awesome-rails"
 gem 'awesome_link'
 gem 'simple_form'
 gem 'will_paginate', '~> 3.1.0'
+gem 'evil_icons'
 
 
 # Use sqlite3 as the database for Active Record

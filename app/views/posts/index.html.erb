@@ -1,11 +1,6 @@
 
 
 
-<div class="center">
-
-<h1>My Entries</h1>
-</div>
-
 
 
 
@@ -18,27 +13,31 @@
 <div class="center1">
 
   <div class="card">
+
     <div class="form-group">
-      Search Entries
+
+
+
       <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
-      <%= text_field_tag :search, params[:search] %>
-       <%= submit_tag "Go!", class: "ctas-button-3"%>
+        <%= text_field_tag :search, params[:search] %>
+        <br>
+       <%= submit_tag "Search Entries", class: "ctas-button-4"%>
 
       <% end %>
 
     </div>
-    <hr>
+  </div>
 
 
     <% @posts.each do |post| %>
 
-
+  <div class="card">
 <div class = "heading2">
-Written on<%=post.created_at.strftime(" %m/%d/%Y")%>
+<%= evil_icon 'ei-calendar',size: :s, class: "icons" %><%=post.created_at.strftime(" %m/%d/%Y")%>
 </div>
 
 
-<span class ="heading3"> Today's Gratitude</span>
+<span class ="heading3"> Gratitude</span>
 <span class = "text1">
 <ol>
 <li><%= post.section1 %></li>
@@ -48,7 +47,7 @@ Written on<%=post.created_at.strftime(" %m/%d/%Y")%>
 
 </span>
 
-<span class ="heading3"> Today's Goal</span>
+<span class ="heading3"> Goal</span>
 
  <span class = "text1">
    <ol>
@@ -67,7 +66,7 @@ Written on<%=post.created_at.strftime(" %m/%d/%Y")%>
       </span>
 
 
-      <hr>
+  </div>
 
     <% end %>
 

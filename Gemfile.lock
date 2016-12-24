@@ -65,6 +65,7 @@ GEM
       responders
       warden (~> 1.2.3)
     erubis (2.7.0)
+    evil_icons (1.9.0)
     execjs (2.7.0)
     font-awesome-rails (4.7.0.0)
       railties (>= 3.2, < 5.1)
@@ -183,6 +184,7 @@ DEPENDENCIES
   cancancan (~> 1.10)
   coffee-rails (~> 4.1.0)
   devise
+  evil_icons
   font-awesome-rails
   has_streak
   jbuilder (~> 2.0)

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 devise_for :users
 get 'welcome/index'
 resources :posts
+resources :future_goal
 
 authenticated :user do
   root "posts#new", as: "authenticated_root"
