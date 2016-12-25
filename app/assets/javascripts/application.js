@@ -15,3 +15,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$('.dropdown').on('show.bs.dropdown', function () {
+    $('.leaderboard').css('margin-top', 350);
+})
+$('.dropdown').on('hide.bs.dropdown', function () {
+     $('.leaderboard').css('margin-top', 0);
+})
