@@ -41,7 +41,7 @@ h2{
   font-size:32px;
 }
 
-  background:#ABA0CB  url('/assets/large-white-shape.png');
+  background:#524c7b  url('/assets/large-white-shape.png');
   background-attachment: fixed;
   background-size:cover
 }
@@ -50,7 +50,17 @@ h2{
 vertical-align: middle;
 }
 
+.top-journal{
+  background-color:#524c7b;
+  margin-top:-19px;
+  height:187px;
+  color:white;
+}
 
+.right-journal{
+  padding-left:215px;
+  padding-top:10px;
+}
 
 .navbar-toggle{
   margin-top:15px;
@@ -95,6 +105,20 @@ vertical-align: middle;
   max-width:1200px;
   border-radius: .35rem;
 box-shadow:0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.journal-card {
+  padding-left:60px;
+  padding-right:60px;
+  padding-top:20px;
+  padding-bottom:20px;
+
+  margin: auto;
+  text-align: center;
+  background:transparent;
+
+  max-width:1200px;
+
 }
 
 .card-center {
@@ -169,7 +193,8 @@ font-family: 'Amatic SC', cursive;
   .navbar-default {
    background-color: #ABA0CB !important;
   /* box-shadow:0 1px 8px rgba(0, 0, 0, 0.3) !important; */
-   height:65px;
+   height:85px;
+   width:100%;
 
    .navbar-text {
      color: #fff; }
@@ -336,6 +361,16 @@ margin:auto;
 
 }
 
+.heading5{
+
+  text-align:center;
+  font-size:23px;
+  margin-top:10px;
+  padding-bottom:5px;
+  letter-spacing: 1px;
+
+}
+
 .text1 {
   font-size: 15px;
   text-align:left;
@@ -365,9 +400,14 @@ margin:auto;
    font-size: 15px;
 }
 
-.form-control {
+.top-journal .form-control {
   height:65px !important;
   color:#21324f;
+  background-color: transparent;
+  border: none;
+  margin-top:15px;
+  box-shadow:none;
+
 }
 
 
@@ -972,11 +1012,22 @@ p.paragraph {
 }
 
 .search-button {
-	background: #ABA0CB;
-	color: white;
   border:transparent;
   vertical-align: middle;
+  width:50px;
+  height:32px;
+  padding:5px;
+  line-height:normal;
 
+
+}
+
+.search {
+  border:none;
+  width:140px;
+  height:30px;
+  padding:5px;
+  background-color:transparent;
 }
 
 #search{
@@ -984,6 +1035,7 @@ p.paragraph {
   width:140px;
   height:30px;
   padding:5px;
+  border-radius:3px;
 }
 @media (max-width: 440px) {
 	.ctas-button,

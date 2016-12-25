@@ -4,15 +4,31 @@
 
 
 
+<div class ="top-journal">
+<div class = "container">
 
+  <div class="journal-card">
+<div class = "heading5">
+  My Journal
+</div>
 
+<%=@counting%> total entries | Created on <%=@startDate%>
 
+                  <%= form_tag(posts_path, :method => "get", type: "text",class: "form-control") do %>
+                    <%= text_field_tag :search, params[:search], placeholder: "Search this journal" %>
+                    <button class='ctas-button-3 search-button'>
+                      Go
+                    </button>
+                  <% end %>
+
+</div>
+
+</div>
+</div>
 
 
 
 <div class="center1">
-
-
 
 
     <% @posts.each do |post| %>

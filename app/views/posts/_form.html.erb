@@ -26,10 +26,10 @@
 
     <%= f.input :section1, label: false, input_html: {:class => "textboxline", placeholder: "I'm grateful for..."} %>
     <%= f.input :section2, label: false, input_html: {:class => "textboxline", placeholder: "A second thing I'm grateful for..."} %>
-    <%= f.input :section3, label: false, input_html: {:class => "textboxline", value: "A third thing I'm grateful for..."} %>
+    <%= f.input :section3, label: false, input_html: {:class => "textboxline", placeholder: "A third thing I'm grateful for..."} %>
 
   <div class ="form-heading"> What is one thing you want to accomplish today? </div>
-    <%= f.input :goal,label: false,  input_html: {:class => "textboxline",value: "My biggest goal for today is..."} %>
+    <%= f.input :goal,label: false,  input_html: {:class => "textboxline",placeholder: "My biggest goal for today is..."} %>
 
 <div class = "spacing">
     <%= f.submit 'Submit', class: "ctas-button-3" %>

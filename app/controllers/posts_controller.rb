@@ -21,7 +21,7 @@ end
     @posts = Post.where(user_id: current_user).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
   end
   @counting = Post.where(user_id: current_user).all.count
-
+  @startDate = Post.first.created_at.strftime("%m/%d/%Y")
   end
 
   # GET /posts/1

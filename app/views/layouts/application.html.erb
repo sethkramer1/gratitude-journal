@@ -28,7 +28,7 @@
   <div class="row">
             <div class="col-md-12">
 
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,9 +43,9 @@
     <div class="collapse navbar-collapse">
         <% if user_signed_in? -%>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to '<i class="fa fa2 fa-pencil-square-o" aria-hidden="true"></i> New Post'.html_safe, new_post_path %></li>
+            <li><%= link_to '<i class="fa fa2 fa-pencil-square-o" aria-hidden="true"></i> New Entry'.html_safe, new_post_path %></li>
 
-            <li><%= link_to '<i class="fa fa2 fa-file-text-o" aria-hidden="true"></i> All Entries'.html_safe, posts_path %></li>
+            <li><%= link_to '<i class="fa fa2 fa-file-text-o" aria-hidden="true"></i> My Journal'.html_safe, posts_path %></li>
 
 
                     <li class="dropdown">
