@@ -12,6 +12,7 @@ gem 'awesome_link'
 gem 'simple_form'
 gem 'will_paginate', '~> 3.1.0'
 gem 'evil_icons'
+gem 'high_voltage', '~> 3.0.0'
 
 
 # Use sqlite3 as the database for Active Record

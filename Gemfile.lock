@@ -73,6 +73,7 @@ GEM
       activesupport (>= 4.1.0)
     has_streak (0.0.6)
       activerecord
+    high_voltage (3.0.0)
     i18n (0.7.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -187,6 +188,7 @@ DEPENDENCIES
   evil_icons
   font-awesome-rails
   has_streak
+  high_voltage (~> 3.0.0)
   jbuilder (~> 2.0)
   jquery-rails
   pg
