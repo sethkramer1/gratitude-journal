@@ -30,8 +30,8 @@ body{
 
  h1{
  text-align:center;
- font-family: 'Amatic SC', cursive;
- font-weight:bold;
+ font-family: 'Pacifico', cursive;
+
  font-size:40px;
  color:#fff;
 
@@ -51,10 +51,11 @@ vertical-align: middle;
 }
 
 .top-journal{
-  background-color:#524c7b;
-  margin-top:-19px;
-  height:187px;
-  color:white;
+  background-color:#fff;
+  height:85px;
+  color:#21324f;
+  box-shadow:0 1px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 .right-journal{
@@ -118,6 +119,7 @@ box-shadow:0 1px 8px rgba(0, 0, 0, 0.3);
   background:transparent;
 
   max-width:1200px;
+  display: flex;
 
 }
 
@@ -156,9 +158,9 @@ box-shadow:0 1px 8px rgba(0, 0, 0, 0.3);
 
  	a {
  		color: #fff;
-font-family: 'Amatic SC', cursive;
- font-size: 35px;
- font-weight: bold;
+font-family: 'Pacifico', cursive;
+
+ font-size: 29px;
  	}
  }
 
@@ -170,9 +172,10 @@ font-family: 'Amatic SC', cursive;
  .navbar {
    position: relative;
  min-height: 40px;
- margin-bottom: 20px;
  border: 1px solid transparent;
   z-index: 9999;
+  margin-bottom: 0 !important;
+
 
  }
  .navbar-nav .open .dropdown-menu{
@@ -348,6 +351,8 @@ margin:auto;
   margin-top:10px;
   padding-bottom:18px;
   letter-spacing: 1px;
+  font-family: 'Pacifico', cursive !important;
+
 
 }
 
@@ -360,13 +365,22 @@ margin:auto;
 
 }
 
+
+
 .heading5{
 
-  text-align:center;
-  font-size:23px;
-  margin-top:10px;
-  padding-bottom:5px;
+  text-align:left;
+  font-size:25px;
+  margin-top:5px;
+  padding-bottom:23px;
   letter-spacing: 1px;
+  font-weight:bold;
+  padding-left:60px;
+  padding-right:60px;
+  width:1050px;
+  margin: auto;
+
+
 
 }
 
@@ -406,6 +420,10 @@ margin:auto;
   border: none;
   margin-top:15px;
   box-shadow:none;
+  text-align:right;
+  padding-left:60px;
+  padding-right:60px;
+  margin: auto;
 
 }
 
@@ -437,12 +455,15 @@ margin:auto;
   font-size: 28px;
   font-weight: bold;
 
+
 }
 
 .time_heading2 {
   font-size: 22px;
   text-align: center;
   padding:5px;
+  font-family: 'Pacifico', cursive !important;
+
 
 }
 .time_heading3 {
@@ -453,12 +474,13 @@ margin:auto;
 }
 
 .quote {
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
   width:90%;
   margin:auto;
   margin-top:19px;
   line-height: 24px;
+  color:#8275A9;
 
 }
 .author{
@@ -870,10 +892,7 @@ p.paragraph {
   color: rgba(0,0,0,.5);
 }
 .logo {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 900;
-  padding-bottom:5px;
+
 }
 @media (max-width: 420px) {
   .logo {
@@ -1017,12 +1036,19 @@ p.paragraph {
   height:32px;
   padding:5px;
   line-height:normal;
+  margin-top:-2px;
 
 
 }
 
+.middle-top {
+  font-size:18px;
+  padding-top:5px;
+  padding-left:5px;
+  font-weight: normal;
+}
+
 .search {
-  border:none;
   width:140px;
   height:30px;
   padding:5px;
@@ -1030,9 +1056,9 @@ p.paragraph {
 }
 
 #search{
-  border:none;
-  width:140px;
-  height:30px;
+  border:1px solid #ADADAD;
+  width:150px;
+  height:34px;
   padding:5px;
   border-radius:3px;
 }
