@@ -80,6 +80,17 @@ vertical-align: middle;
 
 }}
 
+@media (max-width: 390px) {
+
+.top-journal{
+  background-color:#fff;
+
+  height:160px;
+  color:#21324f;
+  box-shadow:0 1px 8px rgba(0, 0, 0, 0.3);
+
+}}
+
 .right-journal{
   padding-left:215px;
   padding-top:10px;
