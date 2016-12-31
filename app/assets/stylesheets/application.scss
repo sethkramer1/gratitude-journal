@@ -492,6 +492,25 @@ margin:auto;
 
 }
 
+.form-control2{
+  height:65px !important;
+  color:#21324f;
+  background-color: transparent;
+  border: none;
+  margin-top:15px;
+  box-shadow:none;
+  text-align:left;
+
+  margin: auto;
+  font-size:14px;
+}
+
+@media (min-width: 940px) {
+  .form-control2 {
+  display:none;
+
+  }}
+
 @media (max-width: 940px) {
   .top-journal .form-control {
   display:none;
