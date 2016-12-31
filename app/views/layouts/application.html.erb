@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gratitude Journal</title>
+  <title>Day Journal</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turboposts-track' => true %>
   <%= javascript_include_tag 'application', 'data-turboposts-track' => true %>
   <%= csrf_meta_tags %>
@@ -29,7 +29,7 @@
         <span class="icon-bar"></span>
       </button>
 
-      <div id="logo" class="navbar-brand"><%= link_to "Sunrise Journal", root_path %></div>
+      <div id="logo" class="navbar-brand"><%= link_to "Day Journal", root_path %></div>
     </div> <!-- end div class="navbar-header" -->
     <div class="collapse navbar-collapse">
         <% if user_signed_in? -%>
@@ -80,6 +80,32 @@
 
 
 				<%= yield %>
+
+
+        <footer class="footer-distributed">
+
+        			<div class="footer-left">
+
+        	<span class ="purple-font"> Day Journal</span>
+
+        				<p class="footer-links">
+        					<a href="/posts/new">New Entry</a>
+        					·
+        					<a href="/posts">My Journal</a>
+        					·
+        					<a href="/pages/gratitude-tips">Feeling Stuck?</a>
+        					·
+        					<a href="/pages/about">About</a>
+
+        				</p>
+
+
+
+        			</div>
+
+
+
+        		</footer>
 
 </body>
 

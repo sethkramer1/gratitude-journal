@@ -17,6 +17,7 @@
 //= require_tree .
 
 
+
 $('.dropdown').on('show.bs.dropdown', function () {
     $('.leaderboard').css('margin-top', 350);
 })
