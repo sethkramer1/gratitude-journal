@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Day Journal</title>
+  <title>Gratitude Pal</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turboposts-track' => true %>
   <%= javascript_include_tag 'application', 'data-turboposts-track' => true %>
   <%= csrf_meta_tags %>
@@ -29,7 +29,7 @@
         <span class="icon-bar"></span>
       </button>
 
-      <div id="logo" class="navbar-brand"><%= link_to "Day Journal", root_path %></div>
+      <div id="logo" class="navbar-brand"><%= link_to "Gratitude Pal", root_path %></div>
     </div> <!-- end div class="navbar-header" -->
     <div class="collapse navbar-collapse">
         <% if user_signed_in? -%>
@@ -86,7 +86,7 @@
 
         			<div class="footer-left">
 
-        	<span class ="purple-font"> Day Journal</span>
+        	<span class ="purple-font"> Gratitude Pal</span>
 
         				<p class="footer-links">
         					<a href="/posts/new">New Entry</a>
