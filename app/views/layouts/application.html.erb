@@ -89,13 +89,31 @@
         	<span class ="purple-font"> Gratitude Pal</span>
 
         				<p class="footer-links">
+
+                <% if user_signed_in? %>
+
         					<a href="/posts/new">New Entry</a>
         					·
         					<a href="/posts">My Journal</a>
-        					·
-        					<a href="/pages/gratitude-tips">Feeling Stuck?</a>
-        					·
-        					<a href="/pages/about">About</a>
+                  ·
+                  <a href="/pages/gratitude-tips">Feeling Stuck?</a>
+                  ·
+                  <a href="/pages/about">About</a>
+                <% else %>
+                <%= link_to 'Sign up', new_user_registration_path %>
+                  ·
+                <%= link_to 'Sign in', new_user_session_path %>
+                ·
+                <a href="/pages/about">About</a>
+
+        				<% end %>
+
+
+
+
+
+
+
 
         				</p>
 
