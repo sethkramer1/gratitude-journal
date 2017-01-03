@@ -1,16 +1,19 @@
-<div class="center">
 
-<h1>Sign up</h1>
-</div>
+<div class = "center1">
 
 <div class="card-center">
+
+  <div class ="time_heading2">
+    Sign up
+</div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
+
+<div class ="form-heading"> Today is the first day of a 365 page book. Make it a good one! </div>  <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true,  input_html:  {:class => "textboxline", placeholder: "Your best email"} %>
   </div>
 
   <div class="field">
@@ -25,7 +28,7 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
-
+<br>
   <div class="actions">
     <%= f.submit 'Sign Up', class: "ctas-button-3" %>
   </div>
@@ -34,6 +37,7 @@
 
 <%= render "devise/shared/links" %>
 
+</div>
 </div>
 <br>
 <br>

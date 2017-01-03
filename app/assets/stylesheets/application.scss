@@ -1364,6 +1364,12 @@ p.paragraph {
 
 
 
+.field{
+  margin-top:20px;
+}
+
+
+
 .footer-distributed{
 	background-color: #fff;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -1374,6 +1380,11 @@ p.paragraph {
   margin-top:80px;
 	padding: 25px 20px;
 }
+
+
+
+
+
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
@@ -1515,6 +1526,8 @@ p.paragraph {
 	.footer-distributed{
 		font: bold 14px sans-serif;
 	}
+
+
 
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
