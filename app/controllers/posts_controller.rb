@@ -30,6 +30,7 @@ end
 
 
   @random = Post.where.not(user_id: current_user).last
+  @counting = Post.where(user_id: current_user).all.count
 
 
 
@@ -40,6 +41,9 @@ end
   def new
     @post = current_user.posts.build
     @quote =   Quote.offset(rand(Quote.count)).first
+    @last_log_in = current_user.last_sign_in_at
+    @counting = Post.where(user_id: current_user).all.count
+
 
   end
 

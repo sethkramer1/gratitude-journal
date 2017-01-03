@@ -23,7 +23,6 @@
 
 body{
 
-   a:hover { background-color: transparent; text-decoration: none; }
    font-size:18px;
    color:#00173d;
 
@@ -168,6 +167,42 @@ box-shadow:0 1px 8px rgba(0, 0, 0, 0.3);
 
 }
 
+
+  #center_emoji{
+      width:100%;
+
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      background-color:#bcffc1;
+
+       animation:center_emoji 0.5s 1;
+      -webkit-animation:center_emoji 0.5s 1;
+      animation-fill-mode: forwards;
+
+      animation-delay:2.5s;
+      -webkit-animation-delay:2.5s; /* Safari and Chrome */
+      -webkit-animation-fill-mode: forwards;
+
+  }
+
+  @keyframes center_emoji{
+      from {opacity :1;}
+      to {opacity :0;}
+  }
+
+  @-webkit-keyframes center_emoji{
+      from {opacity :1;}
+      to {opacity :0;}
+  }
+
+
+.text-middle{
+  vertical-align: middle;
+  padding:12px;
+  font-size: 15px;
+}
+
 .card-inside {
 
   margin: auto;
@@ -185,6 +220,8 @@ box-shadow:0 1px 8px rgba(0, 0, 0, 0.3);
 
    margin-top:5px;
    margin-bottom:5px;
+   a:hover { background-color: transparent; text-decoration: none; }
+
 
 
 
@@ -264,12 +301,13 @@ font-family: 'Pacifico', cursive;
 
 .show-center {
     padding:10px;
-    background-color:#58C9B9;
+    background-color:#bcffc1;
     text-align:center;
     margin:auto;
     margin-bottom: 15px;
-    color:#fff;
-    font-weight: bold;
+    a:hover { background-color: transparent; text-decoration: none; }
+
+
 
 }
 
@@ -279,6 +317,16 @@ padding-left:20px;
 padding-right:20px;
 max-width: 750px;
 margin:auto;
+}
+
+.show-button{
+  a:hover { background-color: white; text-decoration: none; }
+
+}
+
+.tips-button{
+  a:hover { background-color: white; text-decoration: none; }
+
 }
 
 .btn-md {
@@ -942,6 +990,9 @@ li {
 	color: white;
 }
 .ctas-button {
+
+
+
 	color: #444;
 }@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 *,
@@ -1086,6 +1137,8 @@ p.paragraph {
 }
 .ctas {
   margin: 40px 0 0 0;
+  a:hover { background-color: transparent; text-decoration: none; }
+
 }
 .centerdevices,
 .sidedevices {
@@ -1105,7 +1158,7 @@ p.paragraph {
 		margin-top: 60px;
 	}
 }.ctas-button,
-.ctas-button-2,.ctas-button-3,.ctas-button-4,.ctas-button-5 {
+.ctas-button-2,.ctas-button-3,.ctas-button-4,.ctas-button-5,.ctas-button-6 {
 	display: inline-block;
 	height: 40px;
 	line-height: 38px;
@@ -1119,10 +1172,14 @@ p.paragraph {
 	border: 1px solid white;
 	text-decoration: none;
 
+
 }
 
-.ctas-button:hover  { background-color: #fff;}
+.ctas-button:hover  { background-color: #fff !important;}
 
+#button{
+
+}
 
 
 .ctas-button-2 {
@@ -1143,6 +1200,21 @@ p.paragraph {
 
 }
 
+.ctas-button-5 {
+	background: #ABA0CB;
+	color: white;
+	margin: 0 0 0 0px;
+
+}
+.ctas-button-6 {
+display: inline-block;
+    height: 50px;
+    line-height: 48px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 3px;
+    font-size: 25px;
+}
 .search-button {
   border:transparent;
   vertical-align: middle;
@@ -1416,6 +1488,8 @@ p.paragraph {
 	color:  #aba0cb;
 	margin: 20px 0 12px;
 	padding: 0;
+  a:hover { background-color: transparent; text-decoration: none; }
+
 }
 
 .footer-distributed .footer-links a{
@@ -1542,4 +1616,10 @@ p.paragraph {
 		margin-left: 0;
 	}
 
+}
+
+
+.devise-heading{
+  padding:10px;
+  font-weight:bold;
 }

@@ -9,12 +9,16 @@
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.label :email %><br />
+    <div class="devise-heading"
+    <i class="fa fa-envelope-o" aria-hidden="true"> </i>Email<br>
+  </div>
     <%= f.email_field :email, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :password %><br />
+    <div class="devise-heading"
+    <i class="fa fa-lock" aria-hidden="true"></i></i>Password<br>
+  </div>
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
