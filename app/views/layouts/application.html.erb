@@ -47,12 +47,12 @@
             <li><%= link_to '<i class="fa fa2 fa-pencil-square-o" aria-hidden="true"></i> New Entry'.html_safe, new_post_path %></li>
 
             <li><%= link_to '<i class="fa fa2 fa-file-text-o" aria-hidden="true"></i> My Journal'.html_safe, posts_path %></li>
+            <li><%= link_to '<i class="fa fa2 fa-lightbulb-o" aria-hidden="true"></i> Inspiration'.html_safe, page_path('gratitude-tips') %></li>
 
 
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><%= link_to '<i class="fa fa2 fa-info-circle" aria-hidden="true"></i> Feeling stuck?'.html_safe, page_path('gratitude-tips') %></li>
                         <li><%= link_to '<i class="fa fa-bookmark" aria-hidden="true"></i> About us'.html_safe, page_path('about') %></li>
                         <li><%= link_to '<i class="fa fa2 fa-cog" aria-hidden="true"></i> Account'.html_safe, edit_user_registration_path %></li>
                         <li><%= link_to '<i class="fa fa2 fa-sign-out" aria-hidden="true"></i> Sign out'.html_safe, destroy_user_session_path, :method => :delete %></li>
@@ -106,7 +106,7 @@
         					·
         					<a href="/posts">My Journal</a>
                   ·
-                  <a href="/pages/gratitude-tips">Feeling Stuck?</a>
+                  <a href="/pages/gratitude-tips">Inspiration</a>
                   ·
                   <a href="/pages/about">About</a>
                 <% else %>
