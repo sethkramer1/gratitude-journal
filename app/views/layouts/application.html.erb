@@ -20,6 +20,25 @@
 
   </script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $("#morning").click(function(){
+        $("content").show();
+        $('#night-form').addClass('night_form');
+        $("body").css("background-color", "#aba0cb");
+
+    });
+
+    $("#night").click(function(){
+      $('#night-form').removeClass('night_form');
+      $("content").hide();
+      $("body").css("background-color", "#21334f");
+
+});
+});
+</script>
 
 </head>
 <body>
@@ -142,7 +161,5 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 
 </html>

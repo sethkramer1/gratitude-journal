@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161223184702) do
+ActiveRecord::Schema.define(version: 20170105034819) do
 
   create_table "posts", force: :cascade do |t|
     t.text     "section1"
@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(version: 20161223184702) do
     t.text     "learning"
     t.text     "LongTermGoal"
     t.text     "GoalProgress"
+    t.text     "positive1"
+    t.text     "positive2"
+    t.text     "improvement1"
+    t.text     "improvement2"
   end
 
   create_table "quotes", force: :cascade do |t|

@@ -1,0 +1,41 @@
+
+<div class = "card-center">
+
+
+<div class ="time_heading2">  <i class="fa fa2 fa-calendar" aria-hidden="true"></i> <%= Time.now.strftime("%A, %B %d") %>
+</div>
+<div class = "quote">
+<span style="font-style:italic;">"<%= @quote.try(:body) %>" </span>  <br><span class ="author"><%= @quote.try(:author) %></span>
+ </div>
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <%= simple_form_for @post do |f| %>
+  <div class ="form-heading"> What are two things you did well today? </div>
+
+    <%= f.input :positive1, label: false, input_html: {:class => "textboxline", placeholder: "I'm grateful for..."} %>
+    <%= f.input :positive2, label: false, input_html: {:class => "textboxline", placeholder: "A second thing I'm grateful for..."} %>
+
+  <div class ="form-heading"> What are two things you can improve upon tomorrow?</div>
+    <%= f.input :improvement1, label: false,  input_html: {:class => "textboxline",placeholder: "My biggest goal for today is..."} %>
+    <%= f.input :improvement2, label: false, input_html: {:class => "textboxline", placeholder: "A third thing I'm grateful for..."} %>
+
+<div class = "spacing">
+    <%= f.submit 'Submit', class: "ctas-button-3" %>
+</div>
+  <% end %>
+
+
+<% end %>
+</div>
