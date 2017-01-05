@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :nights
 devise_for :users
 get 'welcome/index'
 resources :posts

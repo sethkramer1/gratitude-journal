@@ -1,0 +1,41 @@
+<% @postsMorning.each do |post| %>
+
+<div class="card">
+    <div class="heading2">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <%=post.created_at.strftime(" %m.%d.%Y")%>
+    </div>
+
+    <span class="heading3">
+        My Gratitude</span>
+    <div class="text1">
+
+    <li><%= post.section1 %></li>
+</div>
+<div class="text1">
+    <li><%= post.section2 %></li>
+</div>
+<div class="text1">
+    <li><%= post.section3 %></li>
+</div>
+
+<span class="heading3">
+    My Goal</span>
+
+<div class="text2">
+
+    <li><%= post.goal %></li>
+
+</div>
+
+</span>
+<!--
+            <span class = "time_heading" >Written <%= time_ago_in_words(post.created_at) %> ago</span><br>
+-->
+<span class="delete">
+<%= link_to '      <i class="fa fa-trash-o" aria-hidden="true"></i>Delete'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } %>
+</span>
+
+</div>
+
+<% end %>

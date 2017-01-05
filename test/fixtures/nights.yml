@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  positive1: MyText
+  positive2: MyText
+  improvement1: MyText
+  improvement2: MyText
+
+two:
+  positive1: MyText
+  positive2: MyText
+  improvement1: MyText
+  improvement2: MyText

@@ -7,13 +7,13 @@
 <div class = "quote">
 <span style="font-style:italic;">"<%= @quote.try(:body) %>" </span>  <br><span class ="author"><%= @quote.try(:author) %></span>
  </div>
-<%= form_for(@post) do |f| %>
-  <% if @post.errors.any? %>
+<%= form_for(@night) do |f| %>
+  <% if @night.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+      <h2><%= pluralize(@night.errors.count, "error") %> prohibited this post from being saved:</h2>
 
       <ul>
-      <% @post.errors.full_messages.each do |message| %>
+      <% @night.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -21,15 +21,15 @@
   <% end %>
 
 
-  <%= simple_form_for @post do |f| %>
+  <%= simple_form_for @night do |f| %>
   <div class ="form-heading"> What are two things you did well today? </div>
 
     <%= f.input :positive1, label: false, input_html: {:class => "textboxline", placeholder: "One thing I did well..."} %>
-    <%= f.input :positive2, label: false, input_html: {:class => "textboxline", placeholder: "Another thing I did well..."} %>
+    <%= f.input :positive2, label: false, input_html: {:class => "textboxline", placeholder: "Another thing that went well..."} %>
 
   <div class ="form-heading"> What are two things you can improve upon tomorrow?</div>
-    <%= f.input :improvement1, label: false,  input_html: {:class => "textboxline",placeholder: "Tomorrow I will..."} %>
-    <%= f.input :improvement2, label: false, input_html: {:class => "textboxline", placeholder: "I will do this better tomorrow..."} %>
+    <%= f.input :improvement1, label: false,  input_html: {:class => "textboxline",placeholder: "I could have..."} %>
+    <%= f.input :improvement2, label: false, input_html: {:class => "textboxline", placeholder: "Tomorrow I wil..."} %>
 
 <div class = "spacing">
     <%= f.submit 'Submit', class: "ctas-button-3" %>

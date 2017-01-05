@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170105034819) do
+ActiveRecord::Schema.define(version: 20170105050334) do
+
+  create_table "nights", force: :cascade do |t|
+    t.text     "positive1"
+    t.text     "positive2"
+    t.text     "improvement1"
+    t.text     "improvement2"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "posts", force: :cascade do |t|
     t.text     "section1"

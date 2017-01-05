@@ -13,7 +13,10 @@ end
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.where(user_id: current_user).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
+    @postsMorning = Post.where(user_id: current_user).where.not(section1: [nil, '']).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
+
+    @postsNight = Post.where(user_id: current_user).where.not(positive1: [nil, '']).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
+
 
     if params[:search]
     @posts = Post.where(user_id: current_user).search(params[:search]).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
@@ -30,7 +33,7 @@ end
 
 
   @random = Post.where.not(user_id: current_user).last
-  @counting = Post.where(user_id: current_user).all.count
+  @counting_Night = Post.where(user_id: current_user).where.not(positive1: [nil, '']).all.count
 
 
 
@@ -53,6 +56,13 @@ end
 
   # POST /posts
   # POST /posts.json
+
+def night
+end
+
+
+
+
   def create
     @post = current_user.posts.build(post_params)
 
@@ -101,6 +111,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:section1, :section2, :section3, :goal, :learning)
+      params.require(:post).permit(:section1, :section2, :section3, :goal, :learning, :positive1, :positive2, :improvement1, :improvement2)
     end
 end

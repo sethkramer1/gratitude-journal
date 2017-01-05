@@ -21,20 +21,42 @@
   </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js">
+
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js">
+
   <script src="js/bootstrap.min.js"></script>
   <script>
-$(document).ready(function(){
-    $("#morning").click(function(){
+$(document).ready(function()
+
+
+
+{
+    $("#morningForm").click(function(){
+      
         $("content").show();
         $('#night-form').addClass('night_form');
         $("body").css("background-color", "#aba0cb");
 
     });
 
-    $("#night").click(function(){
+    $("#nightForm").click(function(){
       $('#night-form').removeClass('night_form');
       $("content").hide();
       $("body").css("background-color", "#21334f");
+});
+
+      $("#morningPosts").click(function(){
+          $("content").show();
+          $('#night-form').addClass('night_form');
+          $("body").css("background-color", "#aba0cb");
+
+      });
+
+      $("#nightPosts").click(function(){
+        $('#night-post').removeClass('night_posts');
+        $("content").hide();
+        $("body").css("background-color", "#21334f");
 
 });
 });

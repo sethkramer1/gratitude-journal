@@ -1,12 +1,12 @@
-
+<body id="nightindex">
 
 <div class="top-journal">
     <div class="journal-card">
         <div class="heading5">
-            A.M. Journal
+            Evening Journal
 
             <span class="middle-top">
-                <%=@counting%>
+                <%=@counting_night%>
                 total entries
             </span>
         </div>
@@ -24,30 +24,26 @@
 
 </div>
 
-<%= render 'emoji' %>
 
 <div class="center1">
 
 
+<br>
+        <div class = "morningbutton">
+         <%= link_to "Morning Journal", posts_path ,class: "ctas-button"%>
+         </div>
 
-      <div class = "morningbutton">
-       <%= link_to "Morning Journal", posts_path ,class: "ctas-button"%>
-       </div>
-
-       <br>
-
-
-       <div class = "eveningbutton">
-        <%= link_to "Evening Journal", nights_path ,class: "ctas-button"%>
-        </div>
+         <br>
 
 
+         <div class = "eveningbutton">
+          <%= link_to "Evening Journal", nights_path ,class: "ctas-button"%>
+          </div>
 
 
 
-<content>
-  <%= render 'postMorning' %>
-<content>
+
+  <%= render 'postNight' %>
 
 
 
@@ -60,7 +56,9 @@
 </button>
 <% end %>
 
-<%= will_paginate @posts %>
+<%= will_paginate @postsNight %>
 
 </div>
 </div>
+
+</body>
