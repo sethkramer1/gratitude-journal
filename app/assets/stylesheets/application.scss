@@ -1160,7 +1160,7 @@ p.paragraph {
 		margin-top: 60px;
 	}
 }.ctas-button,
-.ctas-button-2,.ctas-button-3,.ctas-button-4,.ctas-button-5,.ctas-button-6 {
+.ctas-button-2,.ctas-button-3,.ctas-button-4,.ctas-button-5,.ctas-button-6,.ctas-button-7 {
 	display: inline-block;
 	height: 40px;
 	line-height: 38px;
@@ -1217,6 +1217,24 @@ display: inline-block;
     border-radius: 3px;
     font-size: 25px;
 }
+
+.ctas-button-7 {
+  margin-right:10px;
+  a:hover { background-color: transparent; text-decoration: none; }
+
+
+}
+
+@media (max-width: 940px) {
+  .ctas-button-7 {
+    margin-top:10px;
+    margin-right:0px;
+
+  }
+}
+
+
+
 .search-button {
   border:transparent;
   vertical-align: middle;

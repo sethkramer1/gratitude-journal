@@ -27,20 +27,18 @@
 
 <div class="center1">
 
-
 <br>
-        <div class = "morningbutton">
-         <%= link_to "Morning Journal", posts_path ,class: "ctas-button"%>
-         </div>
 
-         <br>
-
-
-         <div class = "eveningbutton">
-          <%= link_to "Evening Journal", nights_path ,class: "ctas-button"%>
-          </div>
+  <button class = "ctas-button-7">
+      <%= link_to "Morning Journal", posts_path %>
+         </button>
 
 
+
+
+          <button class = "ctas-button-7">
+       <%= link_to "Evening Journal", nights_path %>
+   </button>
 
 
   <%= render 'postNight' %>
