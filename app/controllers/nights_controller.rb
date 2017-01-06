@@ -7,12 +7,19 @@ class NightsController < ApplicationController
     @nights = Night.all
     @postsNight = Post.where(user_id: current_user).where.not(positive1: [nil, '']).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
 
+    if params[:search]
+    @postsNight = Post.where(user_id: current_user).where.not(positive1: [nil, '']).search(params[:search]).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
+  else
+    @postsNight = Post.where(user_id: current_user).where.not(positive1: [nil, '']).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
+  end
+
+    @counting_night = Post.where(user_id: current_user).where.not(positive1: [nil, '']).all.count
+
   end
 
   # GET /nights/1
   # GET /nights/1.json
   def show
-    @counting_night = Post.where(user_id: current_user).where.not(positive1: [nil, '']).all.count
 
   end
 

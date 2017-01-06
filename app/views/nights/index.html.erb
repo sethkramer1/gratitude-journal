@@ -3,7 +3,7 @@
 <div class="top-journal">
     <div class="journal-card">
         <div class="heading5">
-            Evening Journal
+            P.M. Journal
 
             <span class="middle-top">
                 <%=@counting_night%>
@@ -29,16 +29,14 @@
 
 <br>
 
-  <button class = "ctas-button-7">
-      <%= link_to "Morning Journal", posts_path %>
-         </button>
+<span class ="show-button">
+       <%= link_to "Morning Journal", posts_path, class: "ctas-button-7"%>
+</span>
 
+<span class ="show-button">
 
-
-
-          <button class = "ctas-button-7">
-       <%= link_to "Evening Journal", nights_path %>
-   </button>
+        <%= link_to "Evening Journal", nights_path,class: "ctas-button-7" %>
+</span>
 
 
   <%= render 'postNight' %>

@@ -15,15 +15,14 @@ end
   def index
     @postsMorning = Post.where(user_id: current_user).where.not(section1: [nil, '']).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
 
-    @postsNight = Post.where(user_id: current_user).where.not(positive1: [nil, '']).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
 
 
     if params[:search]
-    @posts = Post.where(user_id: current_user).search(params[:search]).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
+    @postsMorning = Post.where(user_id: current_user).where.not(section1: [nil, '']).search(params[:search]).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
   else
-    @posts = Post.where(user_id: current_user).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
+    @postsMorning = Post.where(user_id: current_user).where.not(section1: [nil, '']).order("created_at DESC").paginate(:page => params[:page], per_page: 9)
   end
-  @counting = Post.where(user_id: current_user).all.count
+  @counting = Post.where(user_id: current_user).where.not(section1: [nil, '']).all.count
   @startDate = Post.first.created_at.strftime("%m/%d/%Y")
   end
 
@@ -32,7 +31,7 @@ end
   def show
 
 
-  @random = Post.where.not(user_id: current_user).last
+  @random = Post.where.not(user_id: current_user).where.not(section1: [nil, '']).last
   @counting_Night = Post.where(user_id: current_user).where.not(positive1: [nil, '']).all.count
 
 

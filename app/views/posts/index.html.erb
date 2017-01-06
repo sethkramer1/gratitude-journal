@@ -30,16 +30,14 @@
 
 
 
-   <button class = "ctas-button-7">
-       <%= link_to "Morning Journal", posts_path %>
-          </button>
+<span class ="show-button">
+       <%= link_to "Morning Journal", posts_path, class: "ctas-button-7"%>
+</span>
 
+<span class ="show-button">
 
-
-
-           <button class = "ctas-button-7">
-        <%= link_to "Evening Journal", nights_path %>
-</button>
+        <%= link_to "Evening Journal", nights_path,class: "ctas-button-7" %>
+</span>
 
 
 
@@ -64,7 +62,7 @@
 </button>
 <% end %>
 
-<%= will_paginate @posts %>
+<%= will_paginate @postsMorning %>
 
 </div>
 </div>
