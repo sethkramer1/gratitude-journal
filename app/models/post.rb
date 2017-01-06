@@ -6,7 +6,8 @@ class Post < ActiveRecord::Base
   def self.search(search)
   query = "%#{search}%"
    if search
-     self.where("section1 LIKE :search or section2 LIKE :search or section3 LIKE :search or goal LIKE :search" , search: "%#{search}%")
+     self.where("section1 LIKE :search or section2 LIKE :search or section3 LIKE :search or goal LIKE :search or
+     positive1 LIKE :search or positive2 LIKE :search or improvement1 LIKE :search or positive2 LIKE :search" , search: "%#{search}%")
    else
      self.all
    end

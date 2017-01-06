@@ -11,7 +11,7 @@
             </span>
         </div>
 
-        <%= form_tag(posts_path, :method => "get", type: "text",class: "form-control") do %>
+        <%= form_tag(nights_path, :method => "get", type: "text",class: "form-control") do %>
         <%= text_field_tag :search, params[:search], placeholder: "Search this journal" %>
         <button class='ctas-button-5 search-button'>
             <i class="fa fa-search" aria-hidden="true"></i>
