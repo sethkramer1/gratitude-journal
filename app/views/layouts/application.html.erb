@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Gratitude Pal</title>
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turboposts-track' => true %>
   <%= javascript_include_tag 'application', 'data-turboposts-track' => true %>
   <%= csrf_meta_tags %>
@@ -33,7 +34,7 @@ $(document).ready(function()
 
 {
     $("#morningForm").click(function(){
-      
+
         $("content").show();
         $('#night-form').addClass('night_form');
         $("body").css("background-color", "#aba0cb");
