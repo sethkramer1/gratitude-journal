@@ -33,6 +33,7 @@ end
 
   @random = Post.where.not(user_id: current_user).where.not(section1: [nil, '']).last
   @counting_Night = Post.where(user_id: current_user).where.not(positive1: [nil, '']).all.count
+  @counting = Post.where(user_id: current_user).where.not(section1: [nil, '']).all.count
 
 
 

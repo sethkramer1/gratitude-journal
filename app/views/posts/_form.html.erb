@@ -24,6 +24,10 @@
   <%= simple_form_for @post do |f| %>
   <div class ="form-heading"> What are you grateful for today? </div>
 
+  <div class = "inspired">
+<%= link_to '<i class="fa fa2 fa-lightbulb-o" aria-hidden="true"></i> Need Inspiration?'.html_safe, page_path('gratitude-tips') %>
+</div>
+
     <%= f.input :section1, label: false, input_html: {:class => "textboxline", placeholder: "I'm grateful for..."} %>
     <%= f.input :section2, label: false, input_html: {:class => "textboxline", placeholder: "A second thing I'm grateful for..."} %>
     <%= f.input :section3, label: false, input_html: {:class => "textboxline", placeholder: "A third thing I'm grateful for..."} %>
