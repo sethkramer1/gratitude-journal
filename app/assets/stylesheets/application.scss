@@ -671,7 +671,7 @@ ol {
     margin-top:-15px;
 }
 li {
-    text-align: left;
+    text-align: center;
     font-size:17px;
     padding:5px;
 }
@@ -737,17 +737,23 @@ li {
 
 
 
+.center-image{
+
+
+  max-width:100%;
+}
+
+
 .centerdevices .computeriphone .mask {
 	height: 100%;
-	width: 100%;
+	max-width: 100px;
 	overflow: hidden;
 	border-radius: 8px;
 	box-shadow: -1px 1px 4px rgba(107,124,147,.45);
 	background: white;
 }
 .centerdevices .computeriphone .mask-img {
-	width: 100%;
-	display: block;
+	max-width: 100px !important;
 }
 .centerdevices .computeriphone .computer {
 	width: 800px;
@@ -1314,7 +1320,7 @@ display: inline-block;
 		margin: 10px 0 0 0;
 	}
 }.socialproof {
-	padding: 90px 0;
+	padding: 20px 0;
   background-color: #efefef;
 }
 @media (max-width: 680px) {
