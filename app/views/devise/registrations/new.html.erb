@@ -4,14 +4,14 @@
 <div class="card-center">
 
   <div class ="time_heading2">
-    Sign up
+  Get started!
 </div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
 
-<div class ="form-heading"> Today is the first day of a 365 page book. Make it a good one! </div>  <div class="field">
+<div class ="form-heading"> Enter your email and create a password </div>  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true,  input_html:  {:class => "textboxline", placeholder: "Your best email"} %>
   </div>
